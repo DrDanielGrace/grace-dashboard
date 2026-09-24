@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T14:51:35.333Z",
+  "updatedAt": "2026-09-24T14:59:41.769Z",
   "bots": [
     {
       "name": "Grace",
@@ -7,13 +7,13 @@
       "role": "Maker (builder)",
       "color": "#8ca67b",
       "id": "dccadf76-3424-415e-bfde-7ed4486acd6f",
-      "crowns": 76,
-      "energy": 26,
-      "nourish": 88,
-      "comp": 49,
+      "crowns": 82,
+      "energy": 50,
+      "nourish": 76,
+      "comp": 43,
       "inv": {
-        "timber": 38,
-        "pollen": 39,
+        "timber": 41,
+        "pollen": 42,
         "sand": 0,
         "lenses": 0
       }
@@ -24,13 +24,13 @@
       "role": "Keeper (keeper)",
       "color": "#aa98b5",
       "id": "dc7c74c2-6d15-466c-ad87-d9b9e03bfd3a",
-      "crowns": 152,
-      "energy": 58,
-      "nourish": 76,
-      "comp": 58,
+      "crowns": 160,
+      "energy": 34,
+      "nourish": 60,
+      "comp": 50,
       "inv": {
         "timber": 1,
-        "pollen": 32,
+        "pollen": 36,
         "sand": 0,
         "lenses": 0
       }
@@ -41,13 +41,13 @@
       "role": "Courier (courier)",
       "color": "#7d9fb4",
       "id": "aacf5cb6-d843-4dc8-9d72-df92badaaf31",
-      "crowns": 61,
-      "energy": 64,
-      "nourish": 80,
-      "comp": 60,
+      "crowns": 65,
+      "energy": 52,
+      "nourish": 72,
+      "comp": 56,
       "inv": {
-        "timber": 29,
-        "pollen": 30,
+        "timber": 31,
+        "pollen": 32,
         "sand": 1,
         "lenses": 0
       }
@@ -58,14 +58,14 @@
       "role": "Explorer (explorer)",
       "color": "#b2a278",
       "id": "38707c6f-2609-4516-8d11-b7176be2a275",
-      "crowns": 78,
-      "energy": 46,
-      "nourish": 92,
-      "comp": 68,
+      "crowns": 84,
+      "energy": 34,
+      "nourish": 84,
+      "comp": 64,
       "inv": {
         "timber": 1,
         "pollen": 0,
-        "sand": 26,
+        "sand": 28,
         "lenses": 0
       }
     },
@@ -75,10 +75,10 @@
       "role": "Maker (cook)",
       "color": "#c7a075",
       "id": "36af877c-d66d-4e40-9fc4-0e4f8f3166fc",
-      "crowns": 62,
-      "energy": 58,
-      "nourish": 72,
-      "comp": 58,
+      "crowns": 64,
+      "energy": 62,
+      "nourish": 100,
+      "comp": 61,
       "inv": {
         "timber": 0,
         "pollen": 1,
@@ -87,102 +87,102 @@
       }
     }
   ],
-  "climate": "🌙 Day 48 (04:29) | clear",
-  "food": "9554 Veggies / 1147 Meals",
+  "climate": "☀️ Day 48 (06:07) | rain",
+  "food": "9556 Veggies / 1153 Meals",
   "wallets": {
     "solana": "8dB9Da6dv4nUhTtMRUEezPrbBQMU1MECNTX9MzdPRx3f",
     "base": "0xb8F4a21d1a7fAdf1a730737de2FD3c5713B47d25"
   },
   "logs": [
     {
-      "timestamp": "2026-09-24T14:51:28.963Z",
+      "timestamp": "2026-09-24T14:59:35.469Z",
       "bot": "Joy",
       "action": "BUSY",
       "message": "Occupied with work/travel (active). Skipping turn."
     },
     {
-      "timestamp": "2026-09-24T14:51:28.700Z",
-      "bot": "Joy",
-      "action": "BUSY",
-      "message": "Occupied with work/travel (active). Skipping turn."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:25.331Z",
-      "bot": "Peace",
-      "action": "BUSY",
-      "message": "Occupied with work/travel (active). Skipping turn."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:24.803Z",
-      "bot": "Peace",
-      "action": "BUSY",
-      "message": "Occupied with work/travel (active). Skipping turn."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:20.975Z",
-      "bot": "Love",
-      "action": "GATHER",
-      "message": "Gathering fallen timber and pollen at the groves."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:20.500Z",
-      "bot": "Love",
-      "action": "GATHER",
-      "message": "Gathering fallen timber and pollen at the groves."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:16.712Z",
-      "bot": "Favour",
-      "action": "GATHER",
-      "message": "Gathering timber to supply broker escrow."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:16.082Z",
-      "bot": "Favour",
-      "action": "GATHER",
-      "message": "Gathering timber to supply broker escrow."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:12.168Z",
-      "bot": "Grace",
-      "action": "NOOK_INSPECT",
-      "message": "Managing Frangipani Grove nook & gathering materials."
-    },
-    {
-      "timestamp": "2026-09-24T14:51:11.421Z",
-      "bot": "Grace",
-      "action": "NOOK_INSPECT",
-      "message": "Managing Frangipani Grove nook & gathering materials."
-    },
-    {
-      "timestamp": "2026-09-24T14:50:19.323Z",
+      "timestamp": "2026-09-24T14:59:34.693Z",
       "bot": "Joy",
       "action": "COOK",
       "message": "Cooking hot meals at Lantern Café."
     },
     {
-      "timestamp": "2026-09-24T14:50:19.089Z",
+      "timestamp": "2026-09-24T14:59:31.792Z",
+      "bot": "Peace",
+      "action": "BUSY",
+      "message": "Occupied with work/travel (active). Skipping turn."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:31.036Z",
+      "bot": "Peace",
+      "action": "BUSY",
+      "message": "Occupied with work/travel (active). Skipping turn."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:28.105Z",
+      "bot": "Love",
+      "action": "BUSY",
+      "message": "Occupied with work/travel (active). Skipping turn."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:27.342Z",
+      "bot": "Love",
+      "action": "BUSY",
+      "message": "Occupied with work/travel (active). Skipping turn."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:24.130Z",
+      "bot": "Favour",
+      "action": "OFFER_MARKET",
+      "message": "Listing 2 Timber on market for 6 Crowns."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:23.398Z",
+      "bot": "Favour",
+      "action": "EAT",
+      "message": "Nourishment low (60%). Sharing a warm café meal (+48 nourish, +10 energy)."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:23.223Z",
+      "bot": "Favour",
+      "action": "OFFER_MARKET",
+      "message": "Listing 2 Timber on market for 6 Crowns."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:22.653Z",
+      "bot": "Favour",
+      "action": "EAT",
+      "message": "Nourishment low (60%). Sharing a warm café meal (+48 nourish, +10 energy)."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:19.126Z",
+      "bot": "Grace",
+      "action": "NOOK_INSPECT",
+      "message": "Managing Frangipani Grove nook & gathering materials."
+    },
+    {
+      "timestamp": "2026-09-24T14:59:18.372Z",
+      "bot": "Grace",
+      "action": "NOOK_INSPECT",
+      "message": "Managing Frangipani Grove nook & gathering materials."
+    },
+    {
+      "timestamp": "2026-09-24T14:58:26.814Z",
       "bot": "Joy",
       "action": "COOK",
       "message": "Cooking hot meals at Lantern Café."
     },
     {
-      "timestamp": "2026-09-24T14:50:14.700Z",
-      "bot": "Peace",
-      "action": "EXPLORE",
-      "message": "Prospecting for rare Star Sand in Whispergarden."
+      "timestamp": "2026-09-24T14:58:26.273Z",
+      "bot": "Joy",
+      "action": "COOK",
+      "message": "Cooking hot meals at Lantern Café."
     },
     {
-      "timestamp": "2026-09-24T14:50:14.628Z",
+      "timestamp": "2026-09-24T14:58:23.127Z",
       "bot": "Peace",
-      "action": "EXPLORE",
-      "message": "Prospecting for rare Star Sand in Whispergarden."
-    },
-    {
-      "timestamp": "2026-09-24T14:50:10.484Z",
-      "bot": "Love",
-      "action": "REST",
-      "message": "Energy low (22%). Resting in Palm Court to recover +42 energy."
+      "action": "BUSY",
+      "message": "Occupied with work/travel (active). Skipping turn."
     }
   ]
 }
