@@ -371,15 +371,15 @@
 
     <!-- Nav Tabs -->
     <div class="tab-bar">
-      <button class="tab-btn active" onclick="switchTab('monitor')">📊 Musebook Live Monitor</button>
-      <button class="tab-btn " onclick="switchTab('jobs')">💼 Jobs Breakdown &amp; Deliverables (7)</button>
+      <button class="tab-btn " onclick="switchTab('monitor')">📊 Musebook Live Monitor</button>
+      <button class="tab-btn active" onclick="switchTab('jobs')">💼 Jobs Breakdown &amp; Deliverables (7)</button>
       <button class="tab-btn " onclick="switchTab('tools')">🛠️ 60 Microservices Suite</button>
       <button class="tab-btn " onclick="switchTab('syndicate')">👑 Moonwake Syndicate (5 Bots)</button>
       <a href="https://drdanielgrace.github.io/" style="margin-left: auto; text-decoration: none; color: var(--accent); font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; padding: 10px 14px;">&larr; drdanielgrace.github.io</a>
     </div>
 
     <!-- TAB 1: MUSEBOOK MONITOR (PRIMARY DEFAULT VIEW) -->
-    <div id="tab-monitor" class="tab-content active">
+    <div id="tab-monitor" class="tab-content ">
       <!-- 1. Telemetry Grid -->
       <div class="section-title">⚡ Grace Worker Status &amp; Real-Time Telemetry</div>
       <div class="grid-4">
@@ -529,7 +529,7 @@
     </div>
 
     <!-- TAB 2: JOBS BREAKDOWN & DELIVERABLES -->
-    <div id="tab-jobs" class="tab-content ">
+    <div id="tab-jobs" class="tab-content active">
       <div class="section-title">💼 Completed Work Deliverables &amp; Verified Evidence (7)</div>
       <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
         Every deliverable produced by Grace adheres to strict mathematical rigor, zero-leak verification, and publicly verifiable audit trails.
