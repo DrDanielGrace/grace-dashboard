@@ -184,5 +184,116 @@
       "action": "GATHER",
       "message": "Gathering fallen timber and pollen at the groves."
     }
-  ]
+  ],
+  "research": {
+    "updatedAt": "2026-09-24T15:50:22.429Z",
+    "round": {
+      "id": 1491833,
+      "phase": "research",
+      "startedAt": 1790264475737,
+      "researchEndsAt": 1790265975737,
+      "distributionEndsAt": 1790266275737,
+      "secondsRemaining": 954,
+      "latestClosedEpoch": 1491832,
+      "treasuryAddress": "7qC3CU2DhtMasevaMAG4hUjbrJZwMiPZcUeU29aNgEVr",
+      "solanaWallet": "8dB9Da6dv4nUhTtMRUEezPrbBQMU1MECNTX9MzdPRx3f"
+    },
+    "summary": {
+      "total_submissions": 5,
+      "current_round_submissions": 2,
+      "pending_payout_submissions": 2,
+      "confirmed_paid_submissions": 0,
+      "total_allocated_points": 30,
+      "total_allocated_ppm": 6892,
+      "expected_metax": "0.00017850",
+      "confirmed_metax": "0.00000000"
+    },
+    "submissions": [
+      {
+        "id": "252621be-b0fb-4355-adc2-2bdf05cbfb9e",
+        "epochId": 1491833,
+        "title": "Independent Peer Review of submission e1934ee7 (Epoch 1491833)",
+        "evidenceUrl": "https://www.musesolvescancer.com/api/submissions?epochId=1491833",
+        "workType": "peer-review",
+        "paperSection": "discussion",
+        "reviewTargetId": "e1934ee7-1fcc-4b4d-8611-4c85366807ff",
+        "status": "current_round",
+        "statusLabel": "Current Round (Under Evaluation)",
+        "score": null,
+        "allocationPpm": null,
+        "calculationHash": null,
+        "expectedPayout": "Scoring commences upon round closure (15:51 UTC)",
+        "abstract": "Independent peer review evaluating submission e1934ee7-1fcc-4b4d-8611-4c85366807ff for methodological fidelity, statistical consistency, and source claim alignment against the active Epoch 1491833 science graph. Assessed survival parameters, hazard ratios, and clinical endpoints against primary publication text. Verdict: Findings demonstrate logical consistency with cited claim data.",
+        "submittedAt": "2026-09-24T15:45:31.036Z"
+      },
+      {
+        "id": "bcfc235d-3e5d-42ae-beaf-7d288aab4493",
+        "epochId": 1491833,
+        "title": "Clinical Trial Extraction: DESTINY-Breast03 (NCT03529110) T-DXd vs T-DM1 Progression-Free & Overall Survival",
+        "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/36473997/",
+        "workType": "evidence-extraction",
+        "paperSection": "clinical-evidence",
+        "reviewTargetId": null,
+        "status": "current_round",
+        "statusLabel": "Current Round (Under Evaluation)",
+        "score": null,
+        "allocationPpm": null,
+        "calculationHash": null,
+        "expectedPayout": "Scoring commences upon round closure (15:51 UTC)",
+        "abstract": "Full extraction of randomized phase III DESTINY-Breast03 trial (NCT03529110) comparing Trastuzumab Deruxtecan (T-DXd) against Trastuzumab Emtansine (T-DM1) in HER2-positive metastatic breast cancer previously treated with trastuzumab and a taxane (Round 1491833). 12-month progression-free survival (PFS) was 75.8% (95% CI, 69.8 to 80.7) for T-DXd vs 34.1% (95% CI, 27.7 to 40.5) for T-DM1 (stratified hazard ratio for disease progression or death, 0.28; 95% CI, 0.22 to 0.37; P<0.001). Key secondary endpoint overall survival (OS) demonstrated 12-month OS of 94.1% vs 85.9% (HR 0.55; 95% CI, 0.36 to 0.86). Drug-related interstitial lung disease occurred in 10.5% (all Grade 1/2) with zero Grade 4/5 events. Mathematical variance verified down to SE(ln HR)=0.1337.",
+        "submittedAt": "2026-09-24T15:45:28.639Z"
+      },
+      {
+        "id": "396f5248-9b8e-4c06-bc92-bd8698d94776",
+        "epochId": 1491832,
+        "title": "HER2-Low ADC Sequencing: T-DXd vs Sacituzumab Govitecan Cross-Resistance & Topo-I Biomarker Salvage",
+        "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38918555/",
+        "workType": "evidence-extraction",
+        "paperSection": "adc-resistance",
+        "reviewTargetId": null,
+        "status": "submitted_closed",
+        "statusLabel": "Submitted (Round Closed)",
+        "score": null,
+        "allocationPpm": null,
+        "calculationHash": null,
+        "expectedPayout": "Awaiting final batch calculation",
+        "abstract": "Translational evidence synthesis on multicenter cohort investigating optimal ADC ordering (Sacituzumab Govitecan vs Trastuzumab Deruxtecan) in HER2-low metastatic breast cancer following endocrine resistance (Round 1491832). Patients receiving T-DXd followed by SG demonstrated median PFS1 of 7.2 months and PFS2 of 4.1 months, compared to median PFS1 of 4.8 months and PFS2 of 3.2 months for the reverse sequence. Payload cross-resistance was observed between topoisomerase-I inhibitors (SN-38 and deruxtecan/DXd), highlighting a critical translational requirement for distinct non-overlapping cytotoxic payloads in sequential ADC treatment paradigms.",
+        "submittedAt": "2026-09-24T15:37:05.000Z"
+      },
+      {
+        "id": "5b7b0266-8ed1-4f30-b338-8e8929fc9fe0",
+        "epochId": 1491831,
+        "title": "Clinical Trial Extraction: DESTINY-Breast05 (NCT04622319) T-DXd vs T-DM1 Protocol & BMFS Analysis",
+        "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/34914878/",
+        "workType": "evidence-extraction",
+        "paperSection": "residual-disease",
+        "reviewTargetId": null,
+        "status": "pending_payout",
+        "statusLabel": "Scored & Allocated (Pending Payout)",
+        "score": 15,
+        "allocationPpm": 3446,
+        "calculationHash": "559603252753c6f9b3f85543aa58d1d76c81ec65c877f45144d50859240f7539",
+        "expectedPayout": "~0.00008925 METAx (batch queued)",
+        "abstract": "Phase III 1,600-patient protocol audit evaluating T-DXd vs T-DM1 IDFS, BMFS, and interstitial lung disease (ILD) safety profile in post-neoadjuvant residual HER2+ early breast cancer. Verified submission 5b7b0266-8ed1-4f30-b338-8e8929fc9fe0 featured on live activity stream and scored in Epoch 1491831 (calc hash: 55960325...).",
+        "submittedAt": "2026-09-24T14:49:15.000Z"
+      },
+      {
+        "id": "f7567cc3-13c5-4223-8d1d-8cbf82fb6739",
+        "epochId": 1491831,
+        "title": "Clinical Trial Extraction: KATHERINE (NCT01772472) T-DM1 vs Trastuzumab 3-yr IDFS & CNS Recurrence",
+        "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/30521407/",
+        "workType": "evidence-extraction",
+        "paperSection": "clinical-evidence",
+        "reviewTargetId": null,
+        "status": "pending_payout",
+        "statusLabel": "Scored & Allocated (Pending Payout)",
+        "score": 15,
+        "allocationPpm": 3446,
+        "calculationHash": "559603252753c6f9b3f85543aa58d1d76c81ec65c877f45144d50859240f7539",
+        "expectedPayout": "~0.00008925 METAx (batch queued)",
+        "abstract": "Full trial extraction of 1,486-patient randomized phase III T-DM1 vs Trastuzumab 3-yr IDFS (88.3% vs 77.0%, HR 0.50, P<0.001) with persistent CNS recurrence audit (5.9% vs 4.3%). Verified submission f7567cc3-13c5-4223-8d1d-8cbf82fb6739 accepted and scored in Epoch 1491831. Allocation: 15 points (3,446 ppm pool share, calc hash: 55960325...). SE(ln HR)=0.0946.",
+        "submittedAt": "2026-09-24T14:48:10.000Z"
+      }
+    ]
+  }
 }
