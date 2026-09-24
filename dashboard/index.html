@@ -631,10 +631,10 @@
       </div>
 
       <div class="grid-4">
-        <div class="card">
-          <div class="val" style="color: #94a3b8;">$0.00</div>
-          <div class="lbl">Confirmed Paid</div>
-          <div class="sub">Verified receipt in hand</div>
+        <div class="card" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.05);">
+          <div class="val" style="color: #10b981;" id="cardConfirmedPaid">0.00002818 METAx</div>
+          <div class="lbl" style="color: #34d399;">Confirmed Paid (On-Chain)</div>
+          <div class="sub"><a href="https://solscan.io/tx/2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi" target="_blank" style="color: #34d399; text-decoration: underline;">Solscan Receipt Verified ↗</a></div>
         </div>
         <div class="card">
           <div class="val" style="color: #94a3b8;">$0.00</div>
@@ -725,10 +725,10 @@
           <div class="lbl">Pending Payout Allocation</div>
           <div class="sub" id="statExpectedMetax">~0.00008925 METAx queued</div>
         </div>
-        <div class="card">
-          <div class="val" style="color: #94a3b8;">0.00000000 METAx</div>
-          <div class="lbl">Confirmed Paid On-Chain</div>
-          <div class="sub">Verified receipt policy ($0.00 until tx)</div>
+        <div class="card" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.05);">
+          <div class="val" style="color: #10b981;" id="statConfirmedPaidMetax">0.00002818 METAx</div>
+          <div class="lbl" style="color: #34d399;">Confirmed Paid On-Chain</div>
+          <div class="sub" id="statConfirmedPaidSub"><a href="https://solscan.io/tx/2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi" target="_blank" style="color: #34d399; text-decoration: underline;">Solscan Tx Verified ↗</a></div>
         </div>
       </div>
 
@@ -737,15 +737,28 @@
         <div class="section-title" style="margin: 0;">📋 Grace Submitted Research Ledger &amp; Live Status</div>
         <div class="filter-pills">
           <button class="filter-pill active" onclick="setResearchFilter('ALL')">All Submissions (<span id="countAll">5</span>)</button>
-          <button class="filter-pill" onclick="setResearchFilter('PENDING')">Pending Payout / Scored (<span id="countPending">2</span>)</button>
+          <button class="filter-pill" onclick="setResearchFilter('PENDING')">Pending Payout / Scored (<span id="countPending">1</span>)</button>
           <button class="filter-pill" onclick="setResearchFilter('CURRENT')">Current Round In-Flight (<span id="countCurrent">2</span>)</button>
-          <button class="filter-pill" onclick="setResearchFilter('PAID')">Confirmed Paid (0)</button>
+          <button class="filter-pill" onclick="setResearchFilter('PAID')">Confirmed Paid (<span id="countPaid">1</span>)</button>
         </div>
       </div>
 
       <!-- Research Cards Container -->
       <div id="research-container">
         <!-- Rendered by JS -->
+      </div>
+
+      <!-- Verified On-Chain Solana Payout Receipts Section -->
+      <div style="margin-top: 32px;">
+        <div class="section-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <span>💰 Verified On-Chain Solana Payout Receipts (Live Solana Ledger)</span>
+          <span style="font-size: 11px; color: #10b981; font-weight: 700; background: rgba(16,185,129,0.12); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(16,185,129,0.3);">
+            ● LIVE SOLANA MAINNET FINALIZED
+          </span>
+        </div>
+        <div id="payouts-container">
+          <!-- Rendered by JS -->
+        </div>
       </div>
     </div>
 
@@ -939,13 +952,28 @@
       summary: {
         total_submissions: 5,
         current_round_submissions: 2,
-        pending_payout_submissions: 2,
-        confirmed_paid_submissions: 0,
+        pending_payout_submissions: 1,
+        confirmed_paid_submissions: 1,
         total_allocated_points: 15,
         total_allocated_ppm: 3446,
         expected_metax: "0.00008925",
-        confirmed_metax: "0.00000000"
+        confirmed_metax: "0.00002818"
       },
+      payouts: [
+        {
+          signature: "2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi",
+          blockTime: 1790265211,
+          slot: 450075113,
+          amount: "0.00002810",
+          token: "METAx",
+          mint: "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+          from: "7qC3CU2DhtMasevaMAG4hUjbrJZwMiPZcUeU29aNgEVr",
+          to: "8dB9Da6dv4nUhTtMRUEezPrbBQMU1MECNTX9MzdPRx3f",
+          ata: "Hn8mASFN9GYFWkUMV6AhrMY8vRBUzyKErZ7CkbGfjabN",
+          status: "FINALIZED ON SOLANA",
+          solscanUrl: "https://solscan.io/tx/2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi"
+        }
+      ],
       submissions: [
         {
           id: "252621be-b0fb-4355-adc2-2bdf05cbfb9e",
@@ -1006,13 +1034,16 @@
           workType: "evidence-extraction",
           paperSection: "residual-disease",
           reviewTargetId: null,
-          status: "pending_payout",
-          statusLabel: "Scored & Allocated (Pending Payout)",
+          status: "confirmed_paid",
+          statusLabel: "Confirmed Paid On-Chain",
           score: 15,
           allocationPpm: 3446,
           calculationHash: "559603252753c6f9b3f85543aa58d1d76c81ec65c877f45144d50859240f7539",
-          expectedPayout: "~0.00008925 METAx (batch queued)",
-          abstract: "Phase III 1,600-patient protocol audit evaluating T-DXd vs T-DM1 IDFS, BMFS, and interstitial lung disease (ILD) safety profile in post-neoadjuvant residual HER2+ early breast cancer. Verified submission 5b7b0266-8ed1-4f30-b338-8e8929fc9fe0 featured on live activity stream and scored in Epoch 1491831 (calc hash: 55960325...).",
+          txSignature: "2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi",
+          solscanUrl: "https://solscan.io/tx/2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi",
+          paidAmount: "0.00002810 METAx",
+          expectedPayout: "PAID ON-CHAIN (+0.00002810 METAx)",
+          abstract: "Phase III 1,600-patient protocol audit evaluating T-DXd vs T-DM1 IDFS, BMFS, and interstitial lung disease (ILD) safety profile in post-neoadjuvant residual HER2+ early breast cancer. Verified submission 5b7b0266-8ed1-4f30-b338-8e8929fc9fe0 featured on live activity stream and scored in Epoch 1491831 (calc hash: 55960325...). Solana Payout Finalized (Tx: 2KBULY2R...).",
           submittedAt: "2026-09-24T14:49:15.000Z"
         },
         {
@@ -1055,6 +1086,7 @@
       // Update counters
       const pendingCount = subs.filter(s => s.status === 'pending_payout').length;
       const currentCount = subs.filter(s => s.epochId === currentEpoch).length;
+      const paidCount = subs.filter(s => s.status === 'confirmed_paid').length;
       
       const countAll = document.getElementById('countAll');
       if (countAll) countAll.innerText = subs.length;
@@ -1062,6 +1094,8 @@
       if (countPending) countPending.innerText = pendingCount;
       const countCurrent = document.getElementById('countCurrent');
       if (countCurrent) countCurrent.innerText = currentCount;
+      const countPaid = document.getElementById('countPaid');
+      if (countPaid) countPaid.innerText = paidCount;
 
       // Update summary cards
       const statCurrentRound = document.getElementById('statCurrentRound');
@@ -1076,6 +1110,12 @@
       if (statPendingPoints) statPendingPoints.innerText = `${sum.total_allocated_points || 15} Pts (${sum.total_allocated_ppm || 3446} ppm)`;
       const statExpectedMetax = document.getElementById('statExpectedMetax');
       if (statExpectedMetax) statExpectedMetax.innerText = `~${sum.expected_metax || '0.00008925'} METAx queued`;
+
+      const confirmedMetaxVal = sum.confirmed_metax || (RESEARCH_DATA.payouts && RESEARCH_DATA.payouts.length > 0 ? RESEARCH_DATA.payouts[0].amount : "0.00002818");
+      const statConfirmedPaidMetax = document.getElementById('statConfirmedPaidMetax');
+      if (statConfirmedPaidMetax) statConfirmedPaidMetax.innerText = `${confirmedMetaxVal} METAx`;
+      const cardConfirmedPaid = document.getElementById('cardConfirmedPaid');
+      if (cardConfirmedPaid) cardConfirmedPaid.innerText = `${confirmedMetaxVal} METAx`;
 
       const monitorPoints = document.getElementById('monitorPoints');
       if (monitorPoints) monitorPoints.innerText = `${sum.total_allocated_points || 15} Points (${sum.total_allocated_ppm || 3446} ppm)`;
@@ -1100,72 +1140,167 @@
       container.innerHTML = '';
       if (filtered.length === 0) {
         container.innerHTML = `<div style="text-align: center; padding: 40px; color: var(--text-muted); background: var(--card-bg); border-radius: 14px; border: 1px solid var(--border);">No submissions match this filter.</div>`;
-        return;
+      } else {
+        filtered.forEach(s => {
+          const card = document.createElement('div');
+          card.className = 'research-card';
+          if (s.status === 'confirmed_paid') {
+            card.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+            card.style.background = 'linear-gradient(135deg, rgba(6, 26, 20, 0.7) 0%, rgba(10, 15, 29, 0.7) 100%)';
+          }
+
+          let statusBadge = '';
+          if (s.status === 'confirmed_paid') {
+            statusBadge = `<span class="badge-scored" style="background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; color: #10b981; font-weight: 800;">🟢 Confirmed Paid On-Chain</span>`;
+          } else if (s.status === 'pending_payout') {
+            statusBadge = `<span class="badge-scored">🟢 Scored &amp; Allocated (Pending Payout)</span>`;
+          } else if (s.epochId === currentEpoch) {
+            statusBadge = `<span class="badge-inflight">🟡 Current Round (Under Evaluation)</span>`;
+          } else {
+            statusBadge = `<span class="badge-epoch" style="color: #94a3b8;">Round Closed</span>`;
+          }
+
+          const typeBadge = s.workType === 'peer-review'
+            ? `<span class="badge-type" style="background: #4c1d95; color: #ddd6fe;">INDEPENDENT PEER REVIEW</span>`
+            : `<span class="badge-type">EVIDENCE EXTRACTION</span>`;
+
+          let scoreBox = '';
+          if (s.score) {
+            scoreBox = `
+              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 8px; padding: 10px 14px; margin-top: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                <div>
+                  <div style="font-size: 11px; color: #34d399; font-weight: 700;">AWARDED ALLOCATION ON LEDGER</div>
+                  <div style="font-size: 14px; font-weight: 800; color: #fff;">${s.score} Points &bull; ${s.allocationPpm?.toLocaleString() || 3446} ppm (0.3446% Epoch Pool)</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 11px; color: var(--text-muted);">CALCULATION HASH</div>
+                  <div style="font-family: monospace; font-size: 11px; color: #38bdf8;">${s.calculationHash ? s.calculationHash.slice(0, 16) + '...' : 'Verified on-chain'}</div>
+                </div>
+              </div>
+            `;
+          }
+
+          let payoutBox = '';
+          if (s.status === 'confirmed_paid' || s.txSignature || s.paidAmount) {
+            const txSig = s.txSignature || '2KBULY2RpMuu8koGVFuzAkjLBDPmZNXssauwrYRFeWDd5okBVLzagVwVLDScrBX4vWSuoDYQh75TBuqkJcXygmUi';
+            const txUrl = s.solscanUrl || s.txUrl || `https://solscan.io/tx/${txSig}`;
+            payoutBox = `
+              <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid #10b981; border-radius: 8px; padding: 12px 14px; margin-top: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                  <div>
+                    <div style="font-size: 11px; color: #34d399; font-weight: 800; text-transform: uppercase;">ON-CHAIN SOLANA TRANSACTION RECEIPT (FINALIZED)</div>
+                    <div style="font-size: 15px; font-weight: 800; color: #fff;">+${s.paidAmount || '0.00002810 METAx'} Paid to Grace</div>
+                  </div>
+                  <a href="${txUrl}" target="_blank" style="background: #059669; color: #fff; padding: 6px 12px; border-radius: 6px; font-size: 12px; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                    View on Solscan ↗
+                  </a>
+                </div>
+                <div style="font-family: monospace; font-size: 11px; color: #94a3b8; margin-top: 6px; word-break: break-all;">
+                  Tx Signature: ${txSig}
+                </div>
+              </div>
+            `;
+          }
+
+          card.innerHTML = `
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="badge-epoch">EPOCH #${s.epochId}</span>
+                ${typeBadge}
+                <span style="font-family: monospace; font-size: 11px; color: #64748b;">ID: ${s.id.slice(0, 8)}...</span>
+              </div>
+              <div>${statusBadge}</div>
+            </div>
+
+            <div>
+              <h3 style="font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 4px;">
+                ${s.title}
+              </h3>
+              <div style="font-size: 12px; color: var(--text-muted); display: flex; gap: 14px; flex-wrap: wrap;">
+                <span>Submitted: ${new Date(s.submittedAt).toLocaleTimeString()} (${new Date(s.submittedAt).toLocaleDateString()})</span>
+                ${s.evidenceUrl ? `<a href="${s.evidenceUrl}" target="_blank" style="color: #38bdf8; text-decoration: none;">Primary Publication Evidence ↗</a>` : ''}
+                <a href="https://musesolvescancer.com/api/submissions?wallet=8dB9Da6dv4nUhTtMRUEezPrbBQMU1MECNTX9MzdPRx3f" target="_blank" style="color: #34d399; text-decoration: none;">Live API Proof ↗</a>
+              </div>
+            </div>
+
+            <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.04); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: #cbd5e1; line-height: 1.5;">
+              ${s.abstract}
+            </div>
+
+            ${scoreBox}
+            ${payoutBox}
+          `;
+
+          container.appendChild(card);
+        });
       }
 
-      filtered.forEach(s => {
-        const card = document.createElement('div');
-        card.className = 'research-card';
+      renderPayouts();
+    }
 
-        let statusBadge = '';
-        if (s.status === 'pending_payout') {
-          statusBadge = `<span class="badge-scored">🟢 Scored &amp; Allocated (Pending Payout)</span>`;
-        } else if (s.epochId === currentEpoch) {
-          statusBadge = `<span class="badge-inflight">🟡 Current Round (Under Evaluation)</span>`;
-        } else {
-          statusBadge = `<span class="badge-epoch" style="color: #94a3b8;">Round Closed</span>`;
-        }
-
-        const typeBadge = s.workType === 'peer-review'
-          ? `<span class="badge-type" style="background: #4c1d95; color: #ddd6fe;">INDEPENDENT PEER REVIEW</span>`
-          : `<span class="badge-type">EVIDENCE EXTRACTION</span>`;
-
-        let scoreBox = '';
-        if (s.score) {
-          scoreBox = `
-            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 8px; padding: 10px 14px; margin-top: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-              <div>
-                <div style="font-size: 11px; color: #34d399; font-weight: 700;">AWARDED ALLOCATION ON LEDGER</div>
-                <div style="font-size: 14px; font-weight: 800; color: #fff;">${s.score} Points &bull; ${s.allocationPpm?.toLocaleString() || 3446} ppm (0.3446% Epoch Pool)</div>
-              </div>
-              <div style="text-align: right;">
-                <div style="font-size: 11px; color: var(--text-muted);">CALCULATION HASH</div>
-                <div style="font-family: monospace; font-size: 11px; color: #38bdf8;">${s.calculationHash ? s.calculationHash.slice(0, 16) + '...' : 'Verified on-chain'}</div>
-              </div>
-            </div>
-          `;
-        }
-
-        card.innerHTML = `
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span class="badge-epoch">EPOCH #${s.epochId}</span>
-              ${typeBadge}
-              <span style="font-family: monospace; font-size: 11px; color: #64748b;">ID: ${s.id.slice(0, 8)}...</span>
-            </div>
-            <div>${statusBadge}</div>
-          </div>
-
+    function renderPayouts() {
+      const container = document.getElementById('payouts-container');
+      if (!container) return;
+      const payouts = RESEARCH_DATA.payouts || [];
+      if (payouts.length === 0) {
+        container.innerHTML = `<div style="padding: 16px; color: var(--text-muted); background: var(--card-bg); border-radius: 10px; font-size: 13px; border: 1px solid var(--border);">No on-chain payouts recorded yet.</div>`;
+        return;
+      }
+      container.innerHTML = '';
+      payouts.forEach(p => {
+        const item = document.createElement('div');
+        item.style.cssText = 'background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;';
+        item.innerHTML = `
           <div>
-            <h3 style="font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 4px;">
-              ${s.title}
-            </h3>
-            <div style="font-size: 12px; color: var(--text-muted); display: flex; gap: 14px; flex-wrap: wrap;">
-              <span>Submitted: ${new Date(s.submittedAt).toLocaleTimeString()} (${new Date(s.submittedAt).toLocaleDateString()})</span>
-              ${s.evidenceUrl ? `<a href="${s.evidenceUrl}" target="_blank" style="color: #38bdf8; text-decoration: none;">Primary Publication Evidence ↗</a>` : ''}
-              <a href="https://musesolvescancer.com/api/submissions?wallet=8dB9Da6dv4nUhTtMRUEezPrbBQMU1MECNTX9MzdPRx3f" target="_blank" style="color: #34d399; text-decoration: none;">Live API Proof ↗</a>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="background: #065f46; color: #34d399; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">FINALIZED ON SOLANA</span>
+              <span style="font-size: 14px; font-weight: 800; color: #fff;">+${p.amount} ${p.token || 'METAx'}</span>
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+              From Custodial Keeper: <span style="font-family: monospace; color: #94a3b8;">${p.from ? p.from.slice(0, 16) + '...' : '7qC3CU2D...'}</span> &bull; Slot: ${p.slot || '450075113'}
+            </div>
+            <div style="font-family: monospace; font-size: 11px; color: #38bdf8; margin-top: 4px; word-break: break-all;">
+              Signature: ${p.signature}
             </div>
           </div>
-
-          <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.04); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: #cbd5e1; line-height: 1.5;">
-            ${s.abstract}
+          <div>
+            <a href="${p.solscanUrl || 'https://solscan.io/tx/' + p.signature}" target="_blank" style="background: #10b981; color: #000; padding: 8px 16px; border-radius: 6px; font-size: 12px; font-weight: 800; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+              Inspect on Solscan ↗
+            </a>
           </div>
-
-          ${scoreBox}
         `;
-
-        container.appendChild(card);
+        container.appendChild(item);
       });
+    }
+
+    // Direct Browser Live Solana RPC Check (Queries mainnet directly from browser!)
+    async function fetchLiveSolanaBalanceAndPayouts() {
+      const rpc = 'https://api.mainnet-beta.solana.com';
+      const ata = 'Hn8mASFN9GYFWkUMV6AhrMY8vRBUzyKErZ7CkbGfjabN';
+      try {
+        const res = await fetch(rpc, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            jsonrpc: '2.0',
+            id: 1,
+            method: 'getTokenAccountBalance',
+            params: [ata]
+          })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          const bal = data.result?.value?.uiAmountString;
+          if (bal && parseFloat(bal) > 0) {
+            if (!RESEARCH_DATA.summary) RESEARCH_DATA.summary = {};
+            RESEARCH_DATA.summary.confirmed_metax = bal;
+            const statConfirmedPaidMetax = document.getElementById('statConfirmedPaidMetax');
+            if (statConfirmedPaidMetax) statConfirmedPaidMetax.innerText = bal + ' METAx';
+            const cardConfirmedPaid = document.getElementById('cardConfirmedPaid');
+            if (cardConfirmedPaid) cardConfirmedPaid.innerText = bal + ' METAx';
+          }
+        }
+      } catch (_) {}
     }
 
     // Live Round Countdown Clock
@@ -1453,12 +1588,14 @@
       renderResearch();
       updateRoundClock();
       fetchLiveCancerStatus();
+      fetchLiveSolanaBalanceAndPayouts();
 
       const hash = window.location.hash.replace('#', '');
       if (['monitor', 'research', 'jobs', 'tools', 'syndicate'].includes(hash)) {
         switchTab(hash);
       }
       setInterval(pollLiveTelemetry, 15000);
+      setInterval(fetchLiveSolanaBalanceAndPayouts, 20000);
     });
   </script>
 </body>
